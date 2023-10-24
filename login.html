@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="./notifications/style.css" />
+    <link rel="stylesheet" href="./loader/style.css" />
+</head>
+<body>
+    <section id="loader"></section>
+    <section id="notifications"></section>
+    <form id="login">
+        <label for="username">Usuario: </label>   
+        <input type="text" id="username" name="username" required /><br>
+
+        <label for="password">Contraseña:</label>   
+        <input type="password" id="password" name="password" minlength="6" /><br>
+
+        <button type="submit">Iniciar sesión</button>
+
+    </form>
+    <script type="module" src="./login/index.js"></script>
+</body>
+</html>

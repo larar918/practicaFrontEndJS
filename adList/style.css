@@ -1,0 +1,14 @@
+.ad {
+border: 1px solid #ccc;
+padding: 10px;
+margin: 10px;
+background-color: #fff;
+}
+
+.ad p {
+margin: 0;
+}
+
+.ad img {
+width: 50px;
+}
