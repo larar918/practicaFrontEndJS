@@ -37,6 +37,7 @@ const handleDeleteAd = (ad, adDetail) => {
 const addDeleteButton = (ad, adDetail) => {
   const deleteButton = document.createElement('button');
   deleteButton.textContent = 'Borrar anuncio';
+  deleteButton.classList.add('submit');
   deleteButton.addEventListener('click', async () => {
     if (confirm('¿Seguro que quieres borrar el anuncio?')) {
       await deleteAd(ad.id);

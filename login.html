@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./notifications/style.css" />
     <link rel="stylesheet" href="./loader/style.css" />
 </head>
 <body>
+    <header>
+        <section class = "navbar">
+            <h1 class="nav_title">KeepPop</h1>
+            <div id="session"></div>
+        </section>
+        </header>
     <section id="loader"></section>
     <section id="notifications"></section>
     <form id="login">
@@ -17,8 +24,7 @@
         <label for="password">Contraseña:</label>   
         <input type="password" id="password" name="password" minlength="6" /><br>
 
-        <button type="submit">Iniciar sesión</button>
-
+        <button type="submit" class="submit">Iniciar sesión</button>
     </form>
     <script type="module" src="./login/index.js"></script>
 </body>

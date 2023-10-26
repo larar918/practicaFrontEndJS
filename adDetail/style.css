@@ -1,0 +1,11 @@
+#adDetail {
+border: 1px solid #ccc;
+padding: 10px;
+margin: 10px;
+background-color: #fff;
+}
+
+.adDetail p {
+margin: 0;
+}
+

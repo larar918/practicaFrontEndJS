@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crear anuncio</title>
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./notifications/style.css" />
     <link rel="stylesheet" href="./loader/style.css" />
   </head>
   <body>
-    <section id="loader"></section>
+    <header>
+      <section class = "navbar">
+          <h1 class="nav_title">KeepPop</h1>
+          <div id="session"></div>
+      </section>
+      </header>
     <section id="notifications"></section>
+    <section id="loader"></section>
     <form id="adCreation">
       <label for="name">Nombre</label>
       <input name="name" type="text" required/><br>
@@ -21,7 +28,7 @@
       <textarea name="description" required></textarea><br>
 
       <label for="price">Precio</label>
-      <input name="price" type="text" required/><br>
+      <input name="price" type="number" required/><br>
       
       <label for="transaction">Transacción</label>
       <select name="transaction" required>
@@ -29,9 +36,8 @@
         <option value="sale">Venta</option>
       </select><br>
 
-      <button type="submit">Crear anuncio</button>
+      <button type="submit" class="submit">Crear anuncio</button>
     </form>
-
     <script type="module" src="./adCreation/index.js"></script>
   </body>
 </html>

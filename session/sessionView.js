@@ -1,16 +1,13 @@
 export const buildUnauthorizedSession = () => {
-    return `<ul>
-    <li>
-      <a href="./login.html">Login</a>
-      <a href="./signup.html">Signup</a>
-    </li>
-  </ul>`;
+    return `
+      <a href="./login.html" class="button nav_option">Login</a>
+      <a href="./signup.html" class="button nav_option">Signup</a>`;
   }
   
   export const buildAuthenticatedSession = () => {
     return `
-    <a href="./adCreation.html">Create anuncio</a>
-    <button>Cerrar sesión</button>`;
+    <a href="./adCreation.html" class="nav_option">Crear anuncio</a>
+    <button class="nav_option">Cerrar sesión</button>`;
   }
 
   

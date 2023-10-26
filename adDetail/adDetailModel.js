@@ -54,3 +54,4 @@ export const deleteAd = async (adId) => {
     }
   }
 }
+

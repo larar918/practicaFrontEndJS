@@ -2,16 +2,17 @@
   font-weight: bold;
   border: solid 1px gray;
   border-radius: 8px;
-  position: absolute;
-  top:2%;
-  left: 70%;
-  padding: 3px;
+  width: 200px;
+  text-align: center;
+  margin-left: 50px;
+  position:absolute;
+  margin: 50px 0px 0px 520px;
 }
 
 .notification.success {
-  background-color: rgb(125, 254, 125);
+  background-color: rgb(176, 243, 176);
 }
 
 .notification.error {
-  background-color: rgb(255, 128, 128);
+  background-color: rgb(243, 157, 157);
 }
