@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crear anuncio</title>
+    <title>`Detalle anuncio</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./notifications/style.css" />
     <link rel="stylesheet" href="./loader/style.css" />
@@ -16,12 +16,12 @@
       </section>
     </header>
 
-    <h2>Crear anuncio</h2>
+    <h2>Editar anuncio</h2>
 
-    <section id="notifications"></section>
     <section id="loader"></section>
+    <section id="notifications"></section>
     
-    <form id="adCreation">
+    <form id="adEdit">
       <label for="name">Nombre</label>
       <input name="name" type="text" required/><br>
       
@@ -39,10 +39,9 @@
         <option value="purchase">Compra</option>
         <option value="sale">Venta</option>
       </select><br>
-      <button type="submit" class="submit">Crear anuncio</button>
+      <button type="submit" class="submit">Editar anuncio</button>
     </form>
     
-    <script type="module" src="./adCreation/index.js"></script>
+    <script type="module" src="./adEdit/index.js"></script>
   </body>
 </html>
-

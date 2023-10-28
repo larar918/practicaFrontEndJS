@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   adDetail.addEventListener('startAdDetail', () => {
     show();
   })
+  
   adDetail.addEventListener('finishAdDetail', () => {
     hide();
   })

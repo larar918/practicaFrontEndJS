@@ -1,12 +1,12 @@
 export const buildAd = (ad) => {
     let adTemplate = `
-    <p>${ad.name}</p>
-    <p>${ad.photo}</p>
-    <p>${ad.description}</p>
-    <p>${ad.price}</p>
-    <p>${ad.transaction}</p>
-    `;
-  
+    <div">
+        <h4>${ad.name}</h4>
+        <p class="info">${ad.photo}</p>
+        <p class="info">${ad.description}</p>
+        <p class="info">${ad.price}€</p>
+        <p class="info">${ad.transaction}</p>
+    </div>`
     return adTemplate;
   }
 

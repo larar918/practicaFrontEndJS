@@ -1,4 +1,4 @@
-import { deleteAd, getAd } from "./adDetailModel.js"
+import { deleteAd, getAd} from "./adDetailModel.js"
 import { buildAd } from "./adDetailView.js";
 import { dispatchEvent } from "../utils/dispatchEvent.js";
 import { decodeToken } from "../utils/decodeToken.js";
@@ -9,11 +9,11 @@ export const adDetailController = async (adDetail, adId) => {
     dispatchEvent('startAdDetail', null, adDetail)
     const ad = await getAd(adId);
     adDetail.innerHTML = buildAd(ad);
-    handleDeleteAd(ad, adDetail);
+    handleButtons(ad, adDetail);
   } catch (error) {
     dispatchEvent('adLoaded', { type: "error", message: "El anuncio no existe" }, adDetail);
     setTimeout(() => {
-      window.location = './index.html';
+      //window.location = './index.html';
     }, 2000);
   }
   finally {
@@ -22,19 +22,19 @@ export const adDetailController = async (adDetail, adId) => {
   
 }
 
-const handleDeleteAd = (ad, adDetail) => {
+const handleButtons = (ad, adDetail) => {
   const token = localStorage.getItem('token');
 
   if (token) {
     const { userId } = decodeToken(token);
 
     if (userId === ad.userId) {
-      addDeleteButton(ad, adDetail);
+      addButtons(ad, adDetail);
     }
   }
 }
 
-const addDeleteButton = (ad, adDetail) => {
+const addButtons = (ad, adDetail) => {
   const deleteButton = document.createElement('button');
   deleteButton.textContent = 'Borrar anuncio';
   deleteButton.classList.add('submit');
@@ -45,5 +45,19 @@ const addDeleteButton = (ad, adDetail) => {
     }
   })
 
+  const editButton = document.createElement('button');
+  editButton.textContent = 'Editar anuncio';
+  editButton.classList.add('submit');
+  editButton.addEventListener('click', async () => {
+    window.location = `adEdit.html?id=${ad.id}`;
+  })
+
+  adDetail.appendChild(editButton);
   adDetail.appendChild(deleteButton);
 }
+
+
+
+
+
+

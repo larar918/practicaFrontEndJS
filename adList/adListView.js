@@ -1,11 +1,13 @@
 export const buildAd = (ad) => {
+  const transactionType = ad.transaction === 'purchase' ? 'Compra' : 'Venta';
+
     return `
       <a href="./adDetail.html?id=${ad.id}">
-        <p>${ad.name}</p>
-        <p>${ad.photo}</p>
-        <p>${ad.description}</p>
-        <p>${ad.price}</p>
-        <p>${ad.transaction}</p>
+        <h4>${ad.name}</h4>
+        <p class="info">${ad.photo}</p>
+        <p class="info">${ad.description}</p>
+        <p class="info">${ad.price}€</p>
+        <p class="info">${transactionType}</p>
       </a>
   `;
   }
