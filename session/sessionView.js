@@ -1,7 +1,7 @@
 export const buildUnauthorizedSession = () => {
     return `
       <a href="./login.html" class="button nav_option">Login</a>
-      <a href="./signup.html" class="button nav_option">Signup</a>`;
+      <a href="./signup.html" class="button nav_option">Sign Up</a>`;
   }
   
   export const buildAuthenticatedSession = () => {
