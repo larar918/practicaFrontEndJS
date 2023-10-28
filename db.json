@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "username": "usuario1",
+      "password": "$2b$10$V6eTnpxgTeEcxBJuf0nolOtM53A19nAeFlhX38FKmtFr/SEWiOlT2",
+      "id": 1
+    },
+    {
+      "username": "usuario2",
+      "password": "$2b$10$V6eTnpxgTeEcxBJuf0nolOW3k0uxecOVHT7nF4cuVg3VSZ0q4uJ/S",
+      "id": 2
+    }
+  ],
+  "ads": [
+    {
+      "name": "Anuncio de usuario 1",
+      "photo": "usuario1.jpg",
+      "description": "Esto es un anuncio creado desde el usuario 1.",
+      "price": "45",
+      "transaction": "sale",
+      "userId": 1,
+      "updatedAt": "2023-10-28T09:09:20.672Z",
+      "id": 1
+    },
+    {
+      "name": "Anuncio para borrar de usuario 1",
+      "photo": "usuario1borrar.jpg",
+      "description": "Este es una anuncio que vamos a borrar del usuario 1.",
+      "price": "67",
+      "transaction": "purchase",
+      "userId": 1,
+      "updatedAt": "2023-10-28T09:10:09.661Z",
+      "id": 2
+    },
+    {
+      "name": "Anuncio del usuario 2",
+      "photo": "usuario2.jpg",
+      "description": "Creamos anuncio desde usuario 2.",
+      "price": "89",
+      "transaction": "purchase",
+      "userId": 2,
+      "updatedAt": "2023-10-28T09:10:49.670Z",
+      "id": 3
+    },
+    {
+      "name": "Anuncio para editar de usuario 2",
+      "photo": "editarusuario2.jpg",
+      "description": "Se ha creado un anuncio para editar creado por el usuario 2.",
+      "price": "34",
+      "transaction": "sale",
+      "userId": 2,
+      "updatedAt": "2023-10-28T09:11:37.413Z",
+      "id": 4
+    }
+  ]
+}
